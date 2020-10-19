@@ -34,7 +34,7 @@ client.permname = function(message){
     return levels.find(l => l.level === client.permlevel(message)).name
 }
 
-client.on('ready', () => {
+client.on('ready', async () => {
     client.icon = "https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif"
     client.pkg = require("../package.json")
     console.log(`√ Success | ${client.user.tag} is now online!`)
