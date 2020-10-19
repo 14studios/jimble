@@ -31,5 +31,5 @@ client.on('message', async message => {
     if(command) command.run(client, message, args)
 })
 
-client.login("NzQ4MTEwNTQyMTc4MzUzMjQ1.X0YqPA.gRtBgMFvYp4Y0XLYBngxL8TASOU");
+client.login(conf.token);
 
