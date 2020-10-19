@@ -1,7 +1,7 @@
 {
     "name": "jimble",
     "description": "Jimble is a simple Discord bot written in ES6-compatible Node JavaScript, using Discord.js version 12. It has tickets, economy, and music.",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "main": "./src/index.js",
     "keywords": [
         "artemisbot",

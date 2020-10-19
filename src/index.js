@@ -38,7 +38,24 @@ client.on('ready', () => {
     client.icon = "https://www.thisiscolossal.com/wp-content/uploads/2018/08/Isopoly_01.gif"
     client.pkg = require("../package.json")
     console.log(`√ Success | ${client.user.tag} is now online!`)
-    client.user.setActivity("gaming", {type: "WATCHING"})
+
+
+    let GuildSize = await client.guilds.cache.size
+    let statuses = [
+      `j!help || ${GuildSize} servers`,
+      `j!help || What's up? The sky.`,
+      `j!help || Yo can I get admin`
+    ]
+    setInterval(async () => {
+      GuildSize = await client.guilds.cache.size
+      statuses = [
+        `j!help || ${GuildSize} servers`,
+        `j!help || What's up? The sky.`,
+        `j!help || Yo can I get admin`
+      ]
+      const index = Math.floor(Math.random() * (statuses.length - 1) + 1); 
+      await client.user.setActivity(statuses[index], { type: "LISTENING" })
+    }, 25000); // Runs this every 10 seconds.
 })
 
 client.on('message', async message => {
