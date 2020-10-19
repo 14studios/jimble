@@ -3,10 +3,17 @@
     "description": "Jimble is a simple Discord bot written in ES6-compatible Node JavaScript, using Discord.js version 12. It has tickets, economy, and music.",
     "version": "0.0.1",
     "main": "./src/index.js",
-    "keywords": ["artemisbot", "artemis", "artemisdiscord", "discordbot", "discord", "jimble"],
+    "keywords": [
+        "artemisbot",
+        "artemis",
+        "artemisdiscord",
+        "discordbot",
+        "discord",
+        "jimble"
+    ],
     "license": "Apache-2.0",
     "contributors": [
-        { 
+        {
             "name": "Danny H. (DannyIsEpic)",
             "email": "hello@bean.codes",
             "url": "https://bean.codes"
@@ -21,7 +28,7 @@
     },
     "homepage": "https://artemisdev.tech",
     "dependencies": {
-        "discord.js": "^12.3.1",
+        "discord.js": "^12.4.0",
         "sequelize": "^6.3.5"
     }
 }

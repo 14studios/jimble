@@ -7,7 +7,9 @@ module.exports = {
         
         const embed = new MessageEmbed()
         .setTitle("Pong!")
-        .setDescription(`Websocket latency is \`${client.ws.ping}\`ms`)
+        .setDescription(`Websocket latency is \`${client.ws.ping}\`ms.`)
+        .setTimestamp()
+        .setFooter(`Jimble ${client.pkg.version}`)
         .setColor("GREEN");
         message.channel.send({embed: embed})
         
